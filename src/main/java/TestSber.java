@@ -33,7 +33,7 @@ public class TestSber {
 
         driver.findElement(By.xpath("(//div[@class='hd-ft-region__title'])[1]")).click();
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//H4[@class='kit-grid-modal__header'][text()='Выбор региона']"))));
-        driver.findElement(By.xpath("(//INPUT[@class='kit-input__control'])[5]")).click();
+        driver.findElement(By.xpath("(//INPUT[@class='kit-input__control'])[5]")).click(); // //div[@class='kit-input']/input - Почему-то не работает
 
         driver.findElement(By.xpath("(//INPUT[@class='kit-input__control'])[5]")).sendKeys("Нижегородская область"); // //div[@class='kit-input']/input - Почему-то не работает
         driver.findElement(By.xpath("//A[@class='kit-link kit-link_m hd-ft-region__city']")).click();
